@@ -8,6 +8,7 @@ import lombok.Data;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Data
 @Entity
@@ -16,7 +17,9 @@ import java.time.LocalTime;
 public class BloodPressure {
 
     @Id
+    @JsonIgnore
     private int id;
+
 
     private LocalDate date;
     private LocalTime time;
@@ -26,4 +29,5 @@ public class BloodPressure {
     private double avg_SP;
     private double  avg_DP;
     private double avg_HB;
+
 }
