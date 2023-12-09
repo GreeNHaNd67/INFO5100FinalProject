@@ -13,7 +13,7 @@ Vue.config.productionTip = false
 
 axios.defaults.withCredentials = true
 Vue.prototype.$echarts = echarts
-// 将axios挂载到Vue上面
+// axios----Vue
 Vue.prototype.$http = axios
 
 new Vue({
