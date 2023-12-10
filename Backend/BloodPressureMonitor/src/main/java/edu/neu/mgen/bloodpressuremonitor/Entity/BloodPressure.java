@@ -1,5 +1,6 @@
 package edu.neu.mgen.bloodpressuremonitor.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -8,7 +9,6 @@ import lombok.Data;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Data
 @Entity
@@ -20,7 +20,6 @@ public class BloodPressure {
     @JsonIgnore
     private int id;
 
-
     private LocalDate date;
     private LocalTime time;
     private int systolic_pressure;
@@ -29,5 +28,4 @@ public class BloodPressure {
     private double avg_SP;
     private double  avg_DP;
     private double avg_HB;
-
 }
